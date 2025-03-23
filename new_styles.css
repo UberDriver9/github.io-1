@@ -4,8 +4,17 @@
     --secondary: #343a40;
     --accent: #007bff;
     --accent-light: #b3d9ff;
-    /* Lighter, less saturated blue */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-md: 0 5px 15px rgba(0, 0, 0, 0.15);
     --background: #f8f9fa;
+    /* Example: Button hover effect */
     --background-alt: #fff;
     --white: #fff;
     --text-dark: #212529;
@@ -47,6 +56,17 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     background: var(--background);
+}
+/* Example: Button hover effect */
+.btn:hover {
+    background-color: var(--accent-light);
+    transform: translateY(-2px); /* Slightly lift the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow */
+}
+
+/* Example: Portfolio item hover effect */
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
 }
 
 img {
